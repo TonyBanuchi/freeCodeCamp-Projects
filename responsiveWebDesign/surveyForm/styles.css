@@ -1,0 +1,47 @@
+body {
+    background-image: url(https://avatars.githubusercontent.com/u/183542398?v=4);
+    max-width: 750px;
+    min-width: 300px;
+    font-family: "Lucida Console", Georgia, serif;
+  }
+  
+  .description, h1, footer {
+    text-align: center;
+  }
+  
+  
+  
+  fieldset {
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 10px 5px;
+    margin: 5px 0;
+  }
+  
+  .description {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+  }
+  
+  label{
+    display: block;
+  }
+  
+  input[type="submit"]{
+    margin: 1em auto;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    background: linear-gradient(90deg, darkgreen, green, darkgreen);
+  }
+  
+  .container {
+    margin: 40px 30px;
+    background-color: #ddffdd;
+    padding: 20px 20px;
+  }
+  
+  footer {
+    font-size: 12px;
+  }
+  

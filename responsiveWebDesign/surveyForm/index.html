@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Banuchi Survey</title>
+    <meta charset="utf-8">
+    <meta content="view-width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <h1 id="title" class="title">The Banuchi Survey</h1>
+    <hr />
+    <p id="description" class="description">Thank you for your time. This survey will help identify the best Banuchi's out there.</p>
+    <main>
+      <form id="survey-form">
+        <fieldset id="responder-data">
+          <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Please enter your name..." required /></label>
+          <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Provide a valid email" required /></label>
+          <label id="number-label" for="age">Age (in years):<input id="number" name="age" type="number" min="18" max="65" placeholder="Age" required /></label>
+        </fieldset>
+        <fieldset id="survey-data">
+          <label id="dropdown-label" for="dropdown">Are you a Banuchi?: <select id="dropdown" name="banuchi">
+            <option value="">(select an option)</option>
+            <option value="1">I am a Banuchi</option>
+            <option value="2">I know a Banuchi</option>
+            <option value="3">I have heard of the Banuchi</option>
+            <option value="4">I have no memory of this</option>
+          </select></label>
+        </fieldset>
+        <fieldset>
+          <legend>Do you like raspberries?</legend>
+          <label for="rasp-yes">Yes <input id="rasp-yes" type="radio" name="raspberry" value="true" checked /></label>
+          <label for="rasp-no">No <input id="rasp-no" type="radio" name="raspberry" value="false" /></label>
+        </fieldset>
+        <fieldset>
+          <legend>What are you favorite coding languages?</legend>
+          <label for="lang-js"><input id="lang-js" type="checkbox" name="lang-js" value="js" checked /> JavaScript</label>
+          <label for="lang-ts"><input id="lang-ts" type="checkbox" name="lang-ts" value="ts" /> TypeScript</label>
+          <label for="lang-gv"><input id="lang-gv" type="checkbox" name="lang-gv" value="gv" /> Groovy</label>
+          <label for="lang-ht"><input id="lang-ht" type="checkbox" name="lang-ht" value="ht" /> HTML5</label>
+          <label for="lang-cs"><input id="lang-cs" type="checkbox" name="lang-cs" value="cs" /> CSS</label>
+          <label for="lang-py"><input id="lang-py" type="checkbox" name="lang-py" value="py" /> Python</label>
+          <label for="lang-sq"><input id="lang-sq" type="checkbox" name="lang-sq" value="sq" /> SQL</label>
+        </fieldset>
+        <fieldset>
+          <label for="comments" id="comment-label">Additional Comments: </label>
+          <textarea id="comments" name="comments" rows="4" cols="30" placeholder="I would also like to say..."></textarea>
+        </fieldset>
+        <label for="certify-age" id="certify-age-label"><input id="certify-age" type="checkbox" required name="age-verify" value="verified"/> I certify that I am of <a href="https://law.lis.virginia.gov/vacode/title1/chapter2.1/section1-204/#:~:text=For%20the%20purposes%20of%20all,becomes%2018%20years%20of%20age." target="_blank">legal age</a> to provide the information in this survey. </label>
+        <input name="submit" type="submit" id="submit" value="SUBMIT" />
+      </form>
+    </main>
+    <footer>
+      <p id="disclaimer">This form is provided as submission for a certification project through FreeCodeCamp. Free Code Camp is not connected to or represented by this form in any way.</p>
+    </footer>
+    </div>
+  </body>
+</html>
