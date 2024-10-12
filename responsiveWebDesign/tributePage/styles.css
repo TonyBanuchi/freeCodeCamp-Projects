@@ -1,11 +1,31 @@
 #image {
-  max-width: 750px;
-  max-height: 500px;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 10px auto;
 }
 
-#image-div {
+#main, #image-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+li {
+  list-style: none;
+  margin-left: 15%
+}
+
+.date {
+  font-weight: 800;
+}
+
+body {
+  background-color: rgb(236, 197, 149);
+}
+
+#title {
+  text-align: center;
+}
+
