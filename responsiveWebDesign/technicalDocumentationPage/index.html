@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Quick Familiarization of some coding languages" />
+  <title>Coding Languages</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header class="header">Introduction</header>
+      <p class="normal-text">Websites, single-page applications, internet portals, and various others are all common
+        terms describing one particular technology. Presenting content and interactivity for a purpose. There are a
+        multitude of ways this can be accomplished, but the majority of these are focused on 4 core coding languages
+        applied in specific contexts to build a responsive web application. These languages are HTML, CSS, JavaScript,
+        and TypeScript.</p>
+      <p class="normal-text">Each of these has its primary purpose and all of them are utilized in some of the most
+        common web development toolsets, frameworks, and libraries. Angular and React are possibly the two most popular
+        frameworks in use today. The beauty of what they do is simplify the foundational elements of web development
+        into a concise package, allowing developers to create web applications without expert-level familiarity with the
+        core languages.</p>
+      <p class="normal-text">However, these core languages are the building blocks of web content. So, anyone who has a
+        full and in-depth knowledge of these core languages, their purpose, scope, and applicability is not only capable
+        of developing exceptional web applications. They are capable of fluidly shifting across frameworks and tools
+        with the retained ability to create dynamic expert-level web content. These developers are the most sought-after
+        technicians in their field.</p>
+      <p class="normal-text">To better understand these languages, we will use an analogy throughout this document. That
+        analogy is children's building blocks. Think of a fully formed web application as a completed castle made of
+        children’s building blocks. Various aspects of the blocks themselves, their visual appearance, and a variety of
+        interactive behaviors all have to be defined for the castle to look and be as intended. Web applications are no
+        different.</p>
+    </section>
+    <section class="main-section" id="HTML">
+      <header class="header">HTML</header>
+      <p class="normal-text">Hypertext Markup Language forms all of the constructs that you see and interact with on
+        most web pages. Think of this as the physical characteristics of the blocks as they exist. Each block requires a
+        declaration to exist. Elements on a webpage are declared by the HTML for that page. For those of you who have
+        coded before and are thinking, what about when you use another language to interactively duplicate elements, you
+        must remember the scope of each language. The scope of HTML is to define the elements presented to the user. So
+        even when other languages are used to duplicate elements and change them, if you were to examine the code behind
+        the webpage, you would find that every element has its own specific HTML representation.</p>
+      <p class="code-caption">Sample HTML:</p>
+      <code
+        calss="code">&lt;html&gt;&lt;body&gt;&lt;p&gt;This is a simple paragraph in HTML.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;</code>
+    </section>
+    <section class="main-section" id="CSS">
+      <header class="header">CSS</header>
+      <p>Cascading Style Sheets or CSS, are what control how the elements are displayed. Every characteristic you see
+        and some you don’t, is defined by CSS. The list of capabilities for CSS is far too long to mention here but a
+        few of the most common are:</p>
+      <ol>
+        <li id="css-size">Size</li>
+        <li id="css-color"><span>C</span><span>o</span><span>l</span><span>o</span><span>r</span><span>s</span></li>
+        <li id="css-border">Borders</li>
+        <li id="css-background">Backgrounds</li>
+        <li id="css-font">Fonts</li>
+        <li id="css-shape">Shapes</li>
+        <li id="css-position">Positioning</li>
+        <li id="css-animate">Animation/Transformation</li>
+      </ol>
+      <p class="code-caption">Sample CSS:</p>
+      <code class="code">.class-name {width: 450px;}</code>
+    </section>
+    <section class="main-section" id="JavaScript">
+      <header class="header">JavaScript</header>
+      <p class="normal-text">JavaScript, commonly shortened as JS, is a programming and scripting language that allows
+        client-side behaviors and interactivity to be loaded as a part of the webpage. Using the blocks example, rather
+        than having to go somewhere to get another block of a certain size, shape, or color, imagine that just touching
+        the block would cause it to change. Touching the top of a tower of blocks might result in a portion of the
+        castle opening. These types of interactive behaviors are most often achieved by implementing JavaScript.</p>
+      <p class="normal-text">Along with these dynamic behaviors, JavaScript is capable of producing entire webpages, by
+        generating the HTML and CSS on the fly. It can manage calls from the client to the server and parse the
+        responses. The possibilities are veritably endless.</p>
+        <p class="code-caption">Sample JavaScript:</p>
+        <code>sampleFunction(input) = alert(“this is your message:” + input);
+          samplefunction(“hello World”);
+          </code>
+    </section>
+    <section class="main-section" id="TypeScript">
+      <header class="header">TypeScript</header>
+      <p class="normal-text"></p>
+      <p>TypeScript, commonly represented as TS, is a little different in its scope than these other three languages.
+        TypeScript is a type-emphasized code language that is compiled and the compiled result produces the various
+        components of an application. Looking back at our blocks, think of the set of instructions that might come with
+        the blocks. It defines what where when and how to put things where they belong so the castle is formed once
+        complete. In the same way, TypeScript can be used to provide the specific instructions to a compiler which will
+        then produce the required elements that a browser would then utilize to present the web application to you.</p>
+        <p class="code-caption">Sample TypeScript:</p>
+        <code>function myfunction(input: string):void {
+          const message: string = "this is your message: ";
+          alert(message.concat(input));
+          return;
+        }</code>
+      <p class="normal-text">You may notice that this sample looks remarkably similar to the JavaScript example. The
+        reason for that is both JavaScript and TypeScript are based on ECMAScript concepts. TypeScript requires
+        compilation before it can be used by a browser to present an application, but it is also better at producing
+        cross-browser-compatible components because of its emphasis on typing.</p>
+    </section>
+    <section class="main-section" id="Putting_It_Together">
+      <header class="header">Putting It Together</header>
+      <div id="example-code">
+        <p class="code-caption">Example HTML:</p>
+        <code>&lt;button id=&quot;example-button&quot; onclick=&quot;myFunction()&quot;&gt;Push Me&lt;/button&gt;</code>
+        <p class="code-caption">Example CSS:</p>
+        <code>#example-button {color: red; background-color: black;}</code>
+        <p class="code-caption">Example JavaScript:</p>
+        <code>function myFunction(){alert("hello World");}</code>
+        <div id="example-container">
+          <script>function myFunction() { alert("hello World"); }</script>
+          <button id="example-button" onclick="myFunction()">Push Me</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <nav id="navbar">
+    <div class="nav-title">
+      <header class="nav-header">Coding Languages</header>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#HTML">HTML</a>
+      <a class="nav-link" href="#CSS">CSS</a>
+      <a class="nav-link" href="#JavaScript">JavaScript</a>
+      <a class="nav-link" href="#TypeScript">TypeScript</a>
+      <a class="nav-link" href="#Putting_It_Together">Putting It Together</a>
+    </div>
+  </nav>
+</body>
+
+</html>
