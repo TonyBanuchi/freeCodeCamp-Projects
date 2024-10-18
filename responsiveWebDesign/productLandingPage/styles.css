@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+  #nav-bar {
+    flex-wrap: wrap;
+  }
+}
+
+#header {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  position: sticky;
+  top: 0;
+  background-color: #eeeeee;
+  align-items: center;
+  padding: 5px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  grid-column: 6 /-1;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+#header-img {
+  max-width: 100px;
+  max-height: 100px;
+  grid-column: 1 / 2;
+}
+
+.company-name {
+  grid-column: 3 / 6;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  color: #aa5599;
+}
+
+.product-name {
+  font-size: 54px;
+  text-align: center;
+}
+
+.prod-desc-text::first-letter {
+  font-size: 2rem;
+}
+
+.prod-desc-text {
+  padding: 0 200px;
+}
+
+.key-features-heading {
+  text-align: center;
+}
+
+#feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+ul {
+  list-style: square;
+}
+
+.feature-item {
+  font-size: 20px;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.price-box {
+  border: 2px solid darkred;
+  padding: 0 7px;
+  border-radius: 20%;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+#email-form,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit {
+  color: white;
+  background-color: black;
+  margin-top: 5px;
+  height: 25px;
+  width: 75px;
+  border-radius: 10%;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+}
