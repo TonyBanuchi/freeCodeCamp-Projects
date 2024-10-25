@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Palindrome Checker" />
+  <title>Palindrome Checker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+  <main class="content-container">
+    <div class="content-area" id="content1">The Palindrome Checker</div>
+    <div class="middle-section">
+      <div class="content-area" id="content2">
+        <span id="syllables">pal·in·drome</span>
+        <span id="pronunciation">/ˈpalənˌdrōm/</span>
+        <span id="word-type">noun</span>
+        <span id="definition">a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.</span>
+        <span id="source"><a href="https://languages.oup.com/google-dictionary-en" id="source-link">Oxford Languages</a></span>
+      </div>
+    <div class="content-area" id="content3">
+      <label for="text-input" id="input-label">Enter text to test</label>
+      <input type="text" id="text-input" placeholder="ex. mom" aria-label="Enter text here">
+      <button id="check-btn" aria-label="test for palindrome" type="button">Check</button>
+    </div>
+    <div class="content-area" id="content4">
+      <span class="results-element" id="result-label">And the answer is...</span>
+      <span class="results-element" id="result">Enter Text to be Tested and Press the <button id="sample-button" type="button" disabled aria-disabled="true">Check</button> </span>
+    </div></div>
+    <div class="content-area" id="content5">
+      <h3 class="example-header">Examples</h3>
+      <p class="example">Word: <span class="example" id="word-example"></span></p>
+      <p class="example">Phrase: <span class="example" id="phrase-example"></span></p>
+      <p class="example">Sentence: <span class="example" id="sentence-example"></span></p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
