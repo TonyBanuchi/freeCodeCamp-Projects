@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #466f72;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#convert-btn {
+  margin-top: 5%;
+  width: 50%;
+  height: 25%;
+  color: white;
+  background-color: #330000;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#number-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "georgia";
+  margin-bottom: 5px;
+}
+
+#number {
+  height: 25%;
+  width: 25%;
+  font-size: 1.3rem;
+  padding: 2%;
+  text-align: center;
+}
+
+.title-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #000055;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.button-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.output-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  font-family: "Times New Roman";
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+#number-label {
+  padding: 10px 20%;
+  text-align: center;
+  color: #111111;
+}
+
+#output {
+  text-align: center;
+}
+
+.output-border {
+  border: 4px solid black;
+  border-radius: 15px;
+  padding: 5%;
+  background-color: #567f82;
+  min-width: 60%;
+  min-height: 50%;
+  letter-spacing: 2px;
+}
+
+.error {
+  background-color: darkred !important;
+  color: darkgoldenrod !important;
+  border: none !important;
+}

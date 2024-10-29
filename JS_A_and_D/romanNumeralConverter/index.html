@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="convert standard numbers into roman numerals" />
+  <title>Roman Numeral Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+  <main class="content-container">
+    <div class="title-container">
+      <h1 class="title">Roman Numeral Converter</h1>
+    </div>
+    <div class="input-container">
+      <label for="number" id="number-label">Enter Number to be Converted to Roman Numerals</label>
+      <input type="number" name="number" id="number" placeholder="1999" aria-label="number input">
+    </div>
+    <div class="button-container">
+      <button type="button" onclick="validateInput()" id="convert-btn">CONVERT</button>
+    </div>
+    <div class="output-container">
+      <p id="output"></p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
