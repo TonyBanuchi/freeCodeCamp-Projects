@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Validate US telephone numbers" />
+  <title>US Telephone Number Validator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/49fd3fb4ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="content-container">
+    <div class="title-container">
+      <h1 class="title">US Telephone Number Validator</h1>
+    </div>
+    <div class="phone">
+      <div class="screen">
+        <div class="menu">
+          <span id="menu-left">
+            <span id="curr-time" class="current-time"></span>
+          </span>
+          <span id="menu-right">
+            <span class="menu-icon"><i class="fa-solid fa-wifi"></i></span>
+            <span class="menu-icon"><i class="fa-solid fa-signal"></i></span>
+            <span class="menu-icon batt-life">53%</span>
+            <span class="menu-icon"><i class="fa-solid fa-battery-half"></i></span>
+          </span>
+        </div>
+        <div class="phone-content">
+          <label for="user-input" class="input-label">Enter Phone Number:</label>
+          <input type="text" id="user-input" placeholder="555-555-5555" aria-label="phone number input"
+            aria-placeholder="555-555-5555">
+          <div class="keypad">
+            <button id="1" class="key-btn" aria-label="1">
+              <span class="number">1</span>
+              <span class="letters"> </span>
+            </button>
+            <button id="2" class="key-btn" aria-label="2">
+              <span class="number">2</span>
+              <span class="letters">ABC</span>
+            </button>
+            <button id="3" class="key-btn" aria-label="3">
+              <span class="number">3</span>
+              <span class="letters">DEF</span>
+            </button>
+            <button id="4" class="key-btn" aria-label="4">
+              <span class="number">4</span>
+              <span class="letters">GHI</span>
+            </button>
+            <button id="5" class="key-btn" aria-label="5">
+              <span class="number">5</span>
+              <span class="letters">JKL</span>
+            </button>
+            <button id="6" class="key-btn" aria-label="6">
+              <span class="number">6</span>
+              <span class="letters">MNO</span>
+            </button>
+            <button id="7" class="key-btn" aria-label="7">
+              <span class="number">7</span>
+              <span class="letters">PQRS</span>
+            </button>
+            <button id="8" class="key-btn" aria-label="8">
+              <span class="number">8</span>
+              <span class="letters">TUV</span>
+            </button>
+            <button id="9" class="key-btn" aria-label="9">
+              <span class="number">9</span>
+              <span class="letters">WXYZ</span>
+            </button>
+            <button id="check-btn" class="action-key" aria-label="submit entry">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="text">CHECK</span>
+            </button>
+            <button id="0" class="key-btn" aria-label="0">
+              <span class="number">0</span>
+              <span class="letters">+</span>
+            </button>
+            <button id="clear-btn" class="action-key" aria-label="clear entries">
+              <span class="icon"><i class="fa-solid fa-phone-slash"></i></span>
+              <span class="text">CLEAR</span>
+            </button>
+          </div>
+          <div id="results-div" class="output">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
