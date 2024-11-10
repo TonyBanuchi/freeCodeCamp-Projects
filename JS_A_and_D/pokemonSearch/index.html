@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pokémon Search tool, search by name or id number." />
+  <title>Pokémon Search</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/49fd3fb4ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="content-container">
+    <div class="title-container">
+      <h1 class="title">Pokémon Search</h1>
+    </div>
+    <div id="search-container" class="container">
+      <label class="search-element" for="search-input">Search For:</label>
+      <input class="search-element" type="text" id="search-input" name="search-input" placeholder="Pokémon name or id..." required aria-required="true">
+      <button class="search-element" id="search-button" type="button">Search</button>
+    </div>
+    <div id="name-container">
+      <span id="pokemon-name"></span>
+      <span id="pokemon-id"></span>
+    </div>
+    <div id="image-container" class="container">
+    </div>
+    <div id="basic-data-container">
+      <div class="basic-stat-box">HT: <span id="height"></span></div>
+      <div class="basic-stat-box">WT: <span id="weight"></span></div>
+      <div class="basic-stat-box">Type(s): <span id="types"></span></div>
+    </div>
+    <div id="stats-container" class="container">
+      <div class="stat-box">HP: <span id="hp"></span></div>
+      <div class="stat-box">SPD: <span id="speed"></span></div>
+      <div class="stat-box">ATK: <span id="attack"></span></div>
+      <div class="stat-box">DEF: <span id="defense"></span></div>
+      <div class="stat-box">SPEC ATK: <span id="special-attack"></span></div>
+      <div class="stat-box">SPEC DEF: <span id="special-defense"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
